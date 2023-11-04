@@ -1,0 +1,33 @@
+                        Command Line Inputs                                       | 	          Model Output              | DPLL | UCH? |
+python3 DPLL.py 3queens.cnf > results_3queens.txt                                 | 	unsatisfiable                       | 43   |  N   |
+python3 DPLL.py 3queens.cnf +UCH > results_3queens.UCH.tx                         | 	unsatisfiable                       | 7    |  Y   |
+python3 DPLL.py 4queens.cnf > results_4queens.txt                                 | 	Q31 Q12 Q43 Q24                     | 17   |  N   |
+python3 DPLL.py 4queens.cnf +UCH > results_4queens.UCH.txt                        | 	Q21 Q42 Q13 Q34                     | 4    |  Y   |
+python3 DPLL.py 5queens.cnf > results_5queens.txt                                 | 	Q11 Q42 Q23 Q54 Q35                 | 50   |  N   |
+python3 DPLL.py 5queens.cnf +UCH > results_5queens.UCH.txt                        | 	Q41 Q22 Q53 Q34 Q15                 | 5    |  Y   |
+python3 DPLL.py 6queens.cnf > results_6queens.txt                                 | 	Q41 Q22 Q53 Q34 Q65 Q16             | 37   |  N   |
+python3 DPLL.py 6queens.cnf +UCH > results_6queens.UCH.txt                        | 	Q31 Q12 Q63 Q44 Q25 Q56             | 12   |  Y   |
+python3 DPLL.py mapcolor2.cnf > results_mapcolor.txt                              | 	RWA MNG PQ SRB ZNG WV RTG           | 133  |  N   |
+python3 DPLL.py mapcolor2.cnf +UCH > results_mapcolor.UCH.txt                     | 	RWB MNG PQB SRA ZNG WVB RTG         | 12   |  Y   |
+python3 DPLL.py mapcolor.cnf QG VB  > results_mapcolor2.txt                       | 	QG VB RWG MNB PQG SRA ZNB WVG RT    | 22   |  N   |
+python3 DPLL.py mapcolor.cnf QG VB +UCH  > results_mapcolor2.UCH.txt              | 	QG VB RWB MNG PQB SRA ZNG WVB RT    | 4    |  Y   |
+python3 DPLL.py sammy.cnf O1Y O2W O3Y L1W L2Y L3B  > results_sammy_scenarioA.txt  | 	O1Y O2W O3Y L1W L2Y L3B C2W C1B C3Y | 26   |  N/A |
+python3 DPLL.py sammy.cnf O1W L2B L3B O2Y O3W L1W  > results_sammy_scenarioB.txt  | 	O1W L2B L3B O2Y O3W L1W C3W C1B C2Y | 19   |  N/A |
+
+				
+				
+
+				
+				
+				
+
+								
+				
+				
+
+
+
+				
+				
+
+
